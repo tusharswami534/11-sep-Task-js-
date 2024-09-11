@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p style="text-align:center; font-size: 48px; font-weight: 700;" id="demo"></p>
+    <script>
+        // If -else Statement
+        let a = prompt("Enter your mobile battery")
+        a = Number.parseInt(a);
+        if (a < 15) {
+            alert("low battery")
+        }
+        else if (a <= 100 && a > 15) {
+            alert("Normal battery")
+        }
+
+        else {
+            alert("not possible")
+        }
+// Ternary Operator
+        console.log(a, a >= 100 ? 'yes' : 'no')
+// Switch Statement
+        let months;
+        switch (new Date().getMonth()) {
+            case 0:
+                months = "January";
+                break;
+            case 1:
+                months = "February";
+                break;
+            case 2:
+                months = "March";
+                break;
+            case 3:
+                months = "April";
+                break;
+            case 4:
+                months = "May";
+                break;
+            case 5:
+                months = "June";
+                break;
+            case 6:
+                months = "July";
+                break;
+            case 7:
+                months = "August";
+                break;
+            case 8:
+                months = "September";
+                break;
+            case 9:
+                months = "October";
+                break;
+            case 10:
+                months = "November";
+                break;
+            case 10:
+                months = "December";
+                break;
+        }
+        document.getElementById("demo").innerHTML = "Today is 11 " + months;
+    </script>
+</body>
+
+</html>
